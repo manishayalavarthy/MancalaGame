@@ -1,0 +1,24 @@
+import java.awt.Color;
+import java.awt.Shape;
+
+/**
+ * Implements Strategy pattern as the strategy class.
+ * @author Dion Ghieuw
+ * @author Casey Reyes
+ * @author Manisha Yalavarthy
+ */
+public interface BoardLayoutInterface {
+	
+	/**
+	 * Selects the color of layout.
+	 * @return The layout/pit color.
+	 */
+	Color layoutColor();
+	
+	/**
+	 * Select the shape of the pits.
+	 * @param p The pit.
+	 * @return The shape of the pits.
+	 */
+	Shape thePitShape(PitDesign p);
+}
