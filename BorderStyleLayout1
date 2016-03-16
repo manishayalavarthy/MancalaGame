@@ -1,0 +1,31 @@
+import java.awt.*;
+import java.awt.geom.*;
+
+/**
+ * Concrete BoardLayout.
+ * Part of Strategy pattern.
+ * Black color w/ Rectangle pits.
+ * @author Dion Ghieuw
+ * @author Casey Reyes
+ * @author Manisha Yalavarthy
+ */
+public class BoardStyleLayout1 implements BoardLayoutInterface {
+
+	/**
+	 * Default constructor
+	 */
+	public BoardStyleLayout1() {
+	}
+
+	@Override
+	public Color layoutColor() {
+		// TODO Auto-generated method stub
+		return Color.BLACK;
+	}
+
+	@Override
+	public Shape thePitShape(PitDesign p) {
+		// TODO Auto-generated method stub
+		return new Rectangle2D.Double(p.getX(), p.getY(), p.getWidth(), p.getHeight());
+	}
+}
